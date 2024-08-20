@@ -1,4 +1,7 @@
+import { combineReducers } from "redux";
+
 // 1) rootREducer를 만든다
+const rootReducer = combineReducers({});
 
 // 2) store를 조합한다.
 
