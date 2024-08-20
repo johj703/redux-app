@@ -1,7 +1,7 @@
 import { combineReducers, createStore } from "redux";
 import counter from "../modules/counter";
 
-// 1) rootREducer를 만든다
+// 1) rootReducer를 만든다
 const rootReducer = combineReducers({
   counter,
 });
