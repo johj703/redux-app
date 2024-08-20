@@ -1,3 +1,4 @@
+// 초기 상태값
 const initialState = {
   number: 0,
 };
