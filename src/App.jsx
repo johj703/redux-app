@@ -3,7 +3,7 @@ import { useSelector } from "react-redux";
 
 const App = () => {
   const counterReducer = useSelector((state) => {
-    state;
+    return state;
   });
 
   console.log("state", counterReducer);
