@@ -16,7 +16,7 @@ const App = () => {
         type="number"
         value={count}
         onChange={(e) => {
-          setCount(e.target.value);
+          setCount(+e.target.value);
         }}
       />
       <button
