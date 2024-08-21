@@ -10,6 +10,7 @@ const App = () => {
 
   return (
     <div>
+      {counterReducer.number}
       <button
         onClick={() => {
           dispatch({
