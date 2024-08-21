@@ -3,18 +3,22 @@ const initialState = {
   number: 0,
 };
 
-const PLUS_ONE = "PLUS_ONE";
-const MINUS_ONE = "MINUS_ONE";
+// const PLUS_ONE = "PLUS_ONE";
+// const MINUS_ONE = "MINUS_ONE";
+const ADD_NUMBER = "ADD_NUMBER";
+const REMOVE_NUMBER = "REMOVE_NUMBER";
 
-export const plusOne = () => {
+export const addNumber = (payload) => {
   return {
-    type: PLUS_ONE,
+    type: ADD_NUMBER,
+    payload,
   };
 };
 
-export const minusOne = () => {
+export const removeNumber = (payload) => {
   return {
-    type: MINUS_ONE,
+    type: REMOVE_NUMBER,
+    payload,
   };
 };
 
@@ -22,13 +26,13 @@ export const minusOne = () => {
 const counter = (state = initialState, action) => {
   console.log("action => ", action);
   switch (action.type) {
-    case PLUS_ONE:
+    case ADD_NUMBER:
       return {
-        number: state.number + 1,
+        number: state.number + action.payload,
       };
-    case MINUS_ONE:
+    case REMOVE_NUMBER:
       return {
-        number: state.number - 1,
+        number: state.number - action.payload,
       };
     default:
       return state;
