@@ -21,14 +21,14 @@ const App = () => {
       />
       <button
         onClick={() => {
-          dispatch(addNumber());
+          dispatch(addNumber(count));
         }}
       >
         더하기
       </button>
       <button
         onClick={() => {
-          dispatch(removeNumber());
+          dispatch(removeNumber(count));
         }}
       >
         빼기
