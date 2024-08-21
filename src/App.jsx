@@ -1,7 +1,7 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
-import plusOne from "./redux/modules/counter.js";
+import { plusOne, minusOne } from "./redux/modules/counter.js";
 
 const App = () => {
   const counterReducer = useSelector((state) => state.counter);
@@ -20,9 +20,7 @@ const App = () => {
       </button>
       <button
         onClick={() => {
-          dispatch({
-            type: "MINUS_ONE",
-          });
+          dispatch(minusOne());
         }}
       >
         -1
