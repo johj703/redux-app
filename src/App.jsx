@@ -11,6 +11,7 @@ const App = () => {
   return (
     <div>
       {counterReducer.number}
+      <input type="number" />
       <button
         onClick={() => {
           dispatch(plusOne());
