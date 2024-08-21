@@ -10,7 +10,15 @@ const App = () => {
 
   return (
     <div>
-      <button>+1</button>
+      <button
+        onClick={() => {
+          dispatch({
+            type: "PLUS_ONE",
+          });
+        }}
+      >
+        +1
+      </button>
     </div>
   );
 };
