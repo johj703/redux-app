@@ -3,6 +3,14 @@ const initialState = {
   number: 0,
 };
 
+const PLUS_ONE = "PLUS_ONE";
+
+export const plusOne = () => {
+  return {
+    type: PLUS_ONE,
+  };
+};
+
 // 리듀서(함수)
 const counter = (state = initialState, action) => {
   console.log("action => ", action);
