@@ -1,7 +1,7 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
-import { plusOne, minusOne } from "./redux/modules/counter.js";
+import { addNumber, removeNumber } from "./redux/modules/counter.js";
 
 const App = () => {
   const counterReducer = useSelector((state) => state.counter);
@@ -14,14 +14,14 @@ const App = () => {
       <input type="number" />
       <button
         onClick={() => {
-          dispatch(plusOne());
+          dispatch(addNumber());
         }}
       >
         더하기
       </button>
       <button
         onClick={() => {
-          dispatch(minusOne());
+          dispatch(removeNumber());
         }}
       >
         빼기
