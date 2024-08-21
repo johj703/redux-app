@@ -8,6 +8,7 @@ const initialState = {
 const ADD_NUMBER = "ADD_NUMBER";
 const REMOVE_NUMBER = "REMOVE_NUMBER";
 
+// Action creator 함수
 export const addNumber = (payload) => {
   return {
     type: ADD_NUMBER,
