@@ -16,14 +16,14 @@ const App = () => {
           dispatch(plusOne());
         }}
       >
-        +1
+        더하기
       </button>
       <button
         onClick={() => {
           dispatch(minusOne());
         }}
       >
-        -1
+        빼기
       </button>
     </div>
   );
