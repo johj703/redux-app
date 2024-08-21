@@ -5,6 +5,7 @@ const initialState = {
 
 // 리듀서(함수)
 const counter = (state = initialState, action) => {
+  console.log("action => ", action);
   switch (action.type) {
     default:
       return state;
