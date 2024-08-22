@@ -16,3 +16,4 @@ const counterSlice = createSlice({
 
 // Action creator 함수
 export const { addNumber, removeNumber } = counterSlice.actions;
+export default counterSlice.reducer;
