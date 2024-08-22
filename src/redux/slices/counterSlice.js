@@ -9,8 +9,12 @@ const counterSlice = createSlice({
   name: "counter",
   initialState: initialState,
   reducers: {
-    addNumber: () => {},
-    removeNumber: () => {},
+    addNumber: (state, action) => {
+      state.number = state.number + action.payload,
+    },
+    removeNumber: (state, action) => {
+      state.number = state.number - action.payload,
+    },
   },
 });
 
