@@ -13,3 +13,5 @@ const counterSlice = createSlice({
     removeNumber: () => {},
   },
 });
+
+export const { addNumber, removeNumber } = counterSlice.actions;
