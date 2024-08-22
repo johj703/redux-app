@@ -5,4 +5,11 @@ const initialState = {
   number: 0,
 };
 
-const counterSlice = createSlice();
+const counterSlice = createSlice({
+  name: "counter",
+  initialState: initialState,
+  reducers: {
+    addNumber: () => {},
+    removeNumber: () => {},
+  },
+});
